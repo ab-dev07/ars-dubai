@@ -43,7 +43,7 @@ export function HeroSection() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   return (
-    <section id="home" className="pt-20 pb-16 px-6 relative">
+    <section id="home" className="mt-20 pt-20 pb-16 relative">
       <div className="container mx-auto text-center relative z-10">
         {/* Floating Achievement Badges */}
         <motion.div
@@ -234,11 +234,10 @@ export function HeroSection() {
                       <button
                         key={index}
                         onClick={() => setCurrentImageIndex(index)}
-                        className={`w-3 h-3 rounded-full ${
-                          index === currentImageIndex
-                            ? "bg-yellow-400"
-                            : "bg-gray-600"
-                        }`}
+                        className={`w-3 h-3 rounded-full ${index === currentImageIndex
+                          ? "bg-yellow-400"
+                          : "bg-gray-600"
+                          }`}
                       />
                     ))}
                   </div>

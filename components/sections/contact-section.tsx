@@ -32,7 +32,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-16 px-6 bg-gradient-to-br from-black to-gray-900"
+      className="py-16 bg-gradient-to-br from-black to-gray-900"
     >
       <div className="container mx-auto text-center">
         <motion.div

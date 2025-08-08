@@ -42,7 +42,7 @@ export function VideosSection() {
   return (
     <section
       id="videos"
-      className="py-16 px-6 bg-gradient-to-br from-black to-gray-900"
+      className="py-16 bg-gradient-to-br from-black to-gray-900"
     >
       <div className="container mx-auto">
         {/* Header */}
@@ -123,7 +123,7 @@ export function VideosSection() {
                     poster={video.thumbnail}
                     className="w-full h-90 object-cover"
                     muted
-                    
+
                     playsInline
                     preload="metadata"
                     controls

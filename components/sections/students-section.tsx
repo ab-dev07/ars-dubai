@@ -48,7 +48,7 @@ export function StudentsSection() {
   return (
     <section
       id="students"
-      className="py-16 px-6 bg-gradient-to-r from-yellow-500/5 to-transparent"
+      className="py-16 bg-gradient-to-r from-yellow-500/5 to-transparent"
     >
       <div className="container mx-auto">
         <motion.div
@@ -214,7 +214,7 @@ export function StudentsSection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-8 py-3 shadow-lg shadow-yellow-500/25 transform hover:scale-105 transition-all duration-300"
+                  className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold max-sm:text-xs sm:px-8 w-full py-3 shadow-lg shadow-yellow-500/25 transform hover:scale-105 transition-all duration-300 h-auto text-wrap"
                 >
                   <Users className="mr-2 h-5 w-5" />
                   Join 5,247 Successful Students
@@ -222,7 +222,7 @@ export function StudentsSection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 px-8 py-3 bg-transparent backdrop-blur-sm"
+                  className="border-yellow-500 h-auto text-wrap text-yellow-400 hover:bg-yellow-500/10 px-8 py-3 bg-transparent backdrop-blur-sm"
                 >
                   <Play className="mr-2 h-5 w-5" />
                   Watch Success Stories

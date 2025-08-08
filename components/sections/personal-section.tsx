@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Heart, Sparkles, Clock, Dumbbell, Music, Camera, Coffee, Home, Car, Plane, Gamepad2,Weight } from "lucide-react"
+import { Heart, Sparkles, Clock, Dumbbell, Music, Camera, Coffee, Home, Car, Plane, Gamepad2, Weight } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
 import { timelineEvents } from "@/lib/data/timeline"
@@ -21,7 +21,7 @@ export function PersonalSection() {
   ]
 
   return (
-    <section id="personal" className="py-16 px-6 bg-gradient-to-r from-yellow-500/5 to-transparent relative">
+    <section id="personal" className="py-16 bg-gradient-to-r from-yellow-500/5 to-transparent relative">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -255,9 +255,14 @@ export function PersonalSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.2 }}
-                  className={`flex items-center ${event.side === "right" ? "flex-row-reverse" : ""}`}
+                  className={`flex flex-col md:flex-row items-center ${event.side === "right" ? "md:flex-row-reverse" : ""
+                    }`}
                 >
-                  <div className={`w-5/12 ${event.side === "right" ? "text-right" : ""}`}>
+                  {/* Left/Right Content */}
+                  <div
+                    className={`w-full md:w-5/12 ${event.side === "right" ? "md:text-right" : ""
+                      }`}
+                  >
                     <motion.div
                       whileHover={{ scale: 1.05, rotateY: event.side === "left" ? 5 : -5 }}
                       className="relative group"
@@ -268,23 +273,35 @@ export function PersonalSection() {
                       <div className="relative bg-gradient-to-br from-gray-900/80 to-black/80 rounded-2xl p-6 border border-yellow-500/20 shadow-lg shadow-yellow-500/10 hover:border-yellow-400 transition-all duration-300">
                         <div className="flex items-center mb-3">
                           <div className="text-2xl mr-3">{event.icon}</div>
-                          <div className="text-yellow-400 font-bold text-lg">{event.year}</div>
+                          <div className="text-yellow-400 font-bold text-lg">
+                            {event.year}
+                          </div>
                         </div>
-                        <h4 className="text-white font-semibold text-xl mb-2">{event.title}</h4>
+                        <h4 className="text-white font-semibold text-xl mb-2">
+                          {event.title}
+                        </h4>
                         <p className="text-gray-300">{event.description}</p>
                       </div>
                     </motion.div>
                   </div>
-                  <div className="w-2/12 flex justify-center">
+
+                  {/* Circle (Timeline Center) */}
+                  <div className="w-full md:w-2/12 flex justify-center relative my-6 md:my-0">
+                    {/* Vertical line */}
+                    <div className="absolute top-0 bottom-0 w-1 bg-gray-700 md:block"></div>
+                    {/* Circle */}
                     <motion.div
                       whileHover={{ scale: 1.2, rotate: 180 }}
-                      className={`w-8 h-8 bg-gradient-to-r ${event.color} rounded-full border-4 border-black shadow-lg`}
+                      className={`relative z-10 w-8 h-8 bg-gradient-to-r ${event.color} rounded-full border-4 border-black shadow-lg`}
                     ></motion.div>
                   </div>
-                  <div className="w-5/12"></div>
+
+                  {/* Spacer for other side (desktop only) */}
+                  <div className="hidden md:block w-5/12"></div>
                 </motion.div>
               ))}
             </div>
+
           </div>
         </motion.div>
       </div>
