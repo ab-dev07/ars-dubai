@@ -1,0 +1,40 @@
+import type { BlogPost } from "../types"
+
+export const blogPosts: BlogPost[] = [
+  {
+    title: "5 Psychological Traps That Destroy Traders",
+    excerpt: "Learn to identify and overcome the mental barriers that prevent consistent profitability...",
+    date: "Dec 12, 2024",
+    readTime: "8 min read",
+    image: "/placeholder.svg?height=200&width=350",
+    author: "Alex Thompson",
+    views: "31.2K",
+    likes: "1.8K",
+    comments: "247",
+    category: "Psychology",
+  },
+  {
+    title: "Student Success: From $5K to $85K in 10 Months",
+    excerpt: "Meet Sarah, a single mom who transformed her life using my Golden Strategies...",
+    date: "Dec 10, 2024",
+    readTime: "6 min read",
+    image: "/placeholder.svg?height=200&width=350",
+    author: "Guest Writer",
+    views: "28.7K",
+    likes: "2.3K",
+    comments: "156",
+    category: "Success Story",
+  },
+  {
+    title: "Market Analysis: Why EUR/USD is Set to Explode",
+    excerpt: "Technical and fundamental analysis pointing to a major move in EUR/USD...",
+    date: "Dec 8, 2024",
+    readTime: "10 min read",
+    image: "/placeholder.svg?height=200&width=350",
+    author: "Alex Thompson",
+    views: "19.4K",
+    likes: "967",
+    comments: "89",
+    category: "Analysis",
+  },
+]

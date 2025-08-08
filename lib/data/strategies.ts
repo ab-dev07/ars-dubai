@@ -1,0 +1,58 @@
+import type { Strategy } from "../types"
+
+export const strategies: Strategy[] = [
+  {
+    name: "Golden Cross Strategy",
+    description: "My signature strategy that made me millions. Perfect for beginners and pros alike.",
+    winRate: "94%",
+    avgReturn: "12.5%",
+    riskLevel: "Low",
+    timeframe: "Daily",
+    icon: "🏆",
+    color: "from-yellow-400 to-yellow-600",
+    features: ["Risk Management", "Entry/Exit Signals", "Market Analysis", "Position Sizing"],
+    chart: [
+      { day: "Mon", profit: 850 },
+      { day: "Tue", profit: 1200 },
+      { day: "Wed", profit: 950 },
+      { day: "Thu", profit: 1400 },
+      { day: "Fri", profit: 1100 },
+    ],
+  },
+  {
+    name: "Scalping Master",
+    description: "High-frequency trading for quick profits. Advanced strategy for experienced traders.",
+    winRate: "87%",
+    avgReturn: "8.3%",
+    riskLevel: "Medium",
+    timeframe: "5-15min",
+    icon: "⚡",
+    color: "from-blue-400 to-blue-600",
+    features: ["Quick Entries", "Tight Stops", "High Volume", "Technical Analysis"],
+    chart: [
+      { day: "Mon", profit: 450 },
+      { day: "Tue", profit: 680 },
+      { day: "Wed", profit: 520 },
+      { day: "Thu", profit: 750 },
+      { day: "Fri", profit: 590 },
+    ],
+  },
+  {
+    name: "Swing Trading Pro",
+    description: "Hold positions for days to weeks. Perfect for busy professionals with day jobs.",
+    winRate: "91%",
+    avgReturn: "15.2%",
+    riskLevel: "Low-Medium",
+    timeframe: "4H-Daily",
+    icon: "📈",
+    color: "from-green-400 to-green-600",
+    features: ["Trend Following", "Support/Resistance", "Fundamental Analysis", "Risk Control"],
+    chart: [
+      { day: "Mon", profit: 1200 },
+      { day: "Tue", profit: 1450 },
+      { day: "Wed", profit: 1100 },
+      { day: "Thu", profit: 1650 },
+      { day: "Fri", profit: 1350 },
+    ],
+  },
+]

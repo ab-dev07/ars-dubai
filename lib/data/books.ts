@@ -1,0 +1,43 @@
+import type { Book } from "../types"
+
+export const books: Book[] = [
+  {
+    title: "The Golden Cross Method",
+    subtitle: "Master the Strategy That Made Me Millions",
+    price: "$29.99",
+    rating: "4.9",
+    reviews: "2,847",
+    pages: "312",
+    published: "2022",
+    cover: "/placeholder.svg?height=400&width=300",
+    description: "The complete guide to my signature Golden Cross strategy with real trade examples.",
+    bestseller: true,
+    downloads: "15,247",
+  },
+  {
+    title: "Psychology of Profitable Trading",
+    subtitle: "Master Your Mind, Master the Markets",
+    price: "$24.99",
+    rating: "4.8",
+    reviews: "1,923",
+    pages: "268",
+    published: "2023",
+    cover: "/placeholder.svg?height=400&width=300",
+    description: "Overcome emotional trading and develop the mindset of successful traders.",
+    bestseller: false,
+    downloads: "8,934",
+  },
+  {
+    title: "From Zero to Forex Hero",
+    subtitle: "Complete Beginner's Guide to Forex Success",
+    price: "$19.99",
+    rating: "4.7",
+    reviews: "3,156",
+    pages: "198",
+    published: "2021",
+    cover: "/placeholder.svg?height=400&width=300",
+    description: "Start your forex journey right with this comprehensive beginner's guide.",
+    bestseller: false,
+    downloads: "22,891",
+  },
+]
